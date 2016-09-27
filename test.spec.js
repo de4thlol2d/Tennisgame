@@ -54,3 +54,9 @@ function Tennis(pa,pb) {
     var str = Tennis(4,0);
     expect(str).toEqual('Player A Won');})
   });
+
+  describe("Tennis", function() {
+  it('should echo "Player B Won" when Player B get point 4', function() {
+    var str = Tennis(0,4);
+    expect(str).toEqual('Player B Won');})
+  });
