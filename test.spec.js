@@ -90,3 +90,9 @@ function Tennis(pa,pb) {
    var str = Tennis(1,1);
    expect(str).toEqual('Fifteen-Fifteen');})
   });
+
+  describe("Tennis", function() {
+  it('should echo "Thirty - Fifteen" when score = 30 - 15', function() {
+    var str = Tennis(2,1);
+    expect(str).toEqual('Thirty-Fifteen');})
+});
