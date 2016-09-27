@@ -14,12 +14,12 @@ function Tennis(pa,pb) {
 
   }
 
-describe("Tennis Score", function() {
-  it('should be "Love - Love" when score = 0 - 0', function() {
+describe("Tennis", function() {
+  it('should echo "Love - Love" when score = 0 - 0', function() {
     var str = Tennis(0,0);
     expect(str).toEqual('Love-Love');})
   });
-  
+
   describe("Tennis Score", function() {
   it('should be "Fifteen - Love" when score = 15 - 0', function() {
     var str = Tennis(15,0);
