@@ -16,7 +16,18 @@ function Tennis(pa,pb) {
     case 3:voiceb += 'Forty';break;
     case 4:voiceb += 'Player B Won';break
   }
-  return voicea+'-'+voiceb ;
+  if(pa === 4)
+  {
+    return voicea;
+  }
+  else if(pb === 4)
+  {
+    return voiceb;
+  }
+  else
+  {
+    return voicea+'-'+voiceb ;
+  }
 
   }
 
@@ -36,4 +47,10 @@ function Tennis(pa,pb) {
   it('should echo "Fifteen - Love" when score = 15 - 0', function() {
     var str = Tennis(1,0);
     expect(str).toEqual('Fifteen-Love');})
+  });
+
+  describe("Tennis", function() {
+  it('should echo "Player A Won" when Player A get point 4', function() {
+    var str = Tennis(4,0);
+    expect(str).toEqual('Player A Won');})
   });
