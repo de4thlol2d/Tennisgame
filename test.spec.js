@@ -67,9 +67,14 @@ function Tennis(pa,pb) {
     expect(str).toEqual('Player B Won');})
   });
 
-  describe("Tennis Score", function() {
-  it('should be "Love - Thirty" when score = 0 - 30', function() {
-    var str = Tennis(0,2);
-    expect(str).toEqual('Love-Thirty');
-  })
-});
+  describe("Tennis", function() {
+  it('should echo "Love - Thirty" when score = 0 - 30', function() {
+   var str = Tennis(0,2);
+   expect(str).toEqual('Love-Thirty');})
+  });
+
+  describe("Tennis", function() {
+  it('should echo "Love - Forty" when score = 0 - 40', function() {
+   var str = Tennis(0,3);
+   expect(str).toEqual('Love-Forty');})
+  });
