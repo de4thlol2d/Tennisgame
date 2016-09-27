@@ -2,47 +2,37 @@ function Tennis(pa,pb) {
   let voicea = '';
   let voiceb = '';
 
-  if (pa === 0 ) {
-    voicea += 'Love';
+  switch (pa) {
+    case 0:voicea += 'Love';break;
+    case 15:voicea += 'Fifteen';break;
+    case 30:voicea += 'Thirty';break;
+    case 40:voicea += 'Forty';break;
   }
-  if (pb === 0 ) {
-    voiceb += 'Love';
+  switch (pb) {
+    case 0:voiceb += 'Love';break;
+    case 15:voiceb += 'Fifteen';break;
+    case 30:voicea += 'Thirty';break;
+    case 40:voicea += 'Forty';break;
   }
   return voicea+'-'+voiceb ;
 
   }
 
-describe("Tennis Score", function() {
-  it('should be "Love - fifteen" when score = 0 - 15', function() {
+describe("Tennis", function() {
+  it('should echo "Love - fifteen" when score = 0 - 15', function() {
     var str = Tennis(0,15);
-    expect(str).toEqual('Love-fifteen');
+    expect(str).toEqual('Love-Fifteen');
   })
 });
 
-describe("Tennis Score", function() {
-  it('should be "Love - thirty" when score = 0 - 30', function() {
-    var str = Tennis(0,30);
-    expect(str).toEqual('Love-thirty');
-  })
-});
+  describe("Tennis", function() {
+  it('should echo "Love - Love" when score = 0 - 0', function() {
+    var str = Tennis(0,0);
+    expect(str).toEqual('Love-Love');})
+  });
 
-describe("Tennis Score", function() {
-  it('should be "Love - forty" when score = 0 - 40', function() {
-    var str = Tennis(0,40);
-    expect(str).toEqual('Love-forty');
-  })
-});
-
-describe("Tennis Score", function() {
-  it('should be "fifteen - fifteen" when score = 15 - 15', function() {
-     var str = Tennis(15,15);
-    expect(str).toEqual('fifteen-fifteen');
-   })
-});
-
-  describe("Tennis Score", function() {
-  it('should be "thirty - fifteen" when score = 30 - 15', function() {
-      var str = Tennis(30,15);
-      expect(str).toEqual('thirty-fifteen');
-    })
-});
+  describe("Tennis", function() {
+  it('should echo "Fifteen - Love" when score = 15 - 0', function() {
+    var str = Tennis(15,0);
+    expect(str).toEqual('Fifteen-Love');})
+  });
