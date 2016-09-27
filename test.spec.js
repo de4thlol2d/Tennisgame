@@ -50,6 +50,12 @@ function Tennis(pa,pb) {
   });
 
   describe("Tennis", function() {
+  it('should echo "Thirty - Love" when score = 30 - 0', function() {
+    var str = Tennis(2,0);
+    expect(str).toEqual('Thirty-Love');})
+  });
+
+  describe("Tennis", function() {
   it('should echo "Player A Won" when Player A get point 4', function() {
     var str = Tennis(4,0);
     expect(str).toEqual('Player A Won');})
