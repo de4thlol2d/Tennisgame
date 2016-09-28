@@ -66,13 +66,12 @@ var Play = new Tennis();
     expect(Play.AGet()).toEqual('Thirty-Love');})
   });
 
-  /*describe("Tennis", function() {
+  describe("Tennis", function() {
   it('should echo "Forty - Love" when score = 40 - 0', function() {
-   var str = Tennis(3,0);
-   expect(str).toEqual('Forty-Love');})
+   expect(Play.AGet()).toEqual('Forty-Love');})
   });
 
-  describe("Tennis", function() {
+  /*describe("Tennis", function() {
   it('should echo "Player A Won" when Player A get point 4', function() {
     var str = Tennis(4,0);
     expect(str).toEqual('Player A Won');})
