@@ -36,10 +36,12 @@ function Tennis() {
   }
   if(spA === 4)
   {
+    spA = 0;
     return voicea;
   }
   else if(spB === 4)
   {
+    spB = 0;
     return voiceb;
   }
   else
