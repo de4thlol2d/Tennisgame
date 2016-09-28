@@ -71,8 +71,7 @@ var Play = new Tennis();
    expect(Play.AGet()).toEqual('Forty-Love');})
   });
 
-  /*describe("Tennis", function() {
+  describe("Tennis", function() {
   it('should echo "Player A Won" when Player A get point 4', function() {
-    var str = Tennis(4,0);
-    expect(str).toEqual('Player A Won');})
-  });*/
+    expect(Play.AGet()).toEqual('Player A Won');})
+  });
