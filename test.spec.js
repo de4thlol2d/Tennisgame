@@ -18,7 +18,6 @@ function Tennis() {
   }
 
   this.Same = function(){
-    spA += 1 ; spB += 1 ;
     return this.echo();
   }
 
@@ -105,6 +104,8 @@ var Play = new Tennis();
 
   describe("Tennis", function() {
   it('should echo "Fifteen-Fifteen" when score = 15 - 15', function() {
+    Play.AGet();
+    Play.BGet();
     expect(Play.Same()).toEqual('Fifteen-Fifteen');})
   });
 
