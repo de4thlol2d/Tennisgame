@@ -17,6 +17,11 @@ function Tennis() {
     return this.echo();
   }
 
+  this.Same = function(){
+    spA += 1 ; spB += 1 ;
+    return this.echo();
+  }
+
  this.echo = function(){
   let voicea = '';
   let voiceb = '';
@@ -96,4 +101,14 @@ var Play = new Tennis();
   describe("Tennis", function() {
   it('should echo "Player B Won" when Player B get point 4', function() {
     expect(Play.BGet()).toEqual('Player B Won');})
+  });
+
+  describe("Tennis", function() {
+  it('should echo "Fifteen-Fifteen" when score = 15 - 15', function() {
+    expect(Play.Same()).toEqual('Fifteen-Fifteen');})
+  });
+
+  describe("Tennis", function() {
+  it('should echo "Thirty-Fifteen" when score = 30 - 15', function() {
+    expect(Play.AGet()).toEqual('Thirty-Fifteen');})
   });
