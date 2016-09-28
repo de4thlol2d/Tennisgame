@@ -3,7 +3,7 @@ function Tennis() {
    spB = 0;
 
   this.Start = function(){
-    spA = 0; sp = 0 ;
+    spA = 0; spB = 0 ;
     return this.echo();
   }
 
