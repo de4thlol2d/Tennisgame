@@ -58,16 +58,40 @@ var Play = new Tennis();
 
   describe("Tennis", function() {
   it('should echo "Fifteen - Love" when score = 15 - 0', function() {
-    expect(Play.BGet()).toEqual('Fifteen-Love');})
+    expect(Play.AGet()).toEqual('Fifteen-Love');})
   });
 
   describe("Tennis", function() {
-  it('should echo "Thirty-Love" when score = 30 - 0', function() {
-    expect(Play.BGet()).toEqual('Thirty-Love');})
+  it('should echo "Thirty - Love" when score = 30 - 0', function() {
+    expect(Play.AGet()).toEqual('Thirty-Love');})
+  });
+
+  describe("Tennis", function() {
+  it('should echo "Forty - Love" when score = 40 - 0', function() {
+   expect(Play.AGet()).toEqual('Forty-Love');})
+  });
+
+  describe("Tennis", function() {
+  it('should echo "Player A Won" when Player A get point 4', function() {
+    expect(Play.AGet()).toEqual('Player A Won');})
+  });
+
+  describe("Tennis", function() {
+  it('should echo "Love-Fifteen" when score = 0 - 15', function() {
+    expect(Play.BGet()).toEqual('Love-Fifteen');})
+  });
+
+  describe("Tennis", function() {
+  it('should echo "Love-Thirty" when score = 0 - 30', function() {
+    expect(Play.BGet()).toEqual('Love-Thirty');})
   });
 
   describe("Tennis", function() {
   it('should echo "Love-Forty" when score = 0 - 40', function() {
     expect(Play.BGet()).toEqual('Love-Forty');})
   });
-});
+
+  describe("Tennis", function() {
+  it('should echo "Player B Won" when Player B get point 4', function() {
+    expect(Play.BGet()).toEqual('Player B Won');})
+  });
