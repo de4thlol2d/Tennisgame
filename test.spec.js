@@ -77,3 +77,23 @@ var Play = new Tennis();
   it('should echo "Player A Won" when Player A get point 4', function() {
     expect(Play.AGet()).toEqual('Player A Won');})
   });
+
+  describe("Tennis", function() {
+  it('should echo "Love-Fifteen" when score = 0 - 15', function() {
+    expect(Play.BGet()).toEqual('Love-Fifteen');})
+  });
+
+  describe("Tennis", function() {
+  it('should echo "Love-Thirty" when score = 0 - 30', function() {
+    expect(Play.BGet()).toEqual('Love-Thirty');})
+  });
+
+  describe("Tennis", function() {
+  it('should echo "Love-Forty" when score = 0 - 40', function() {
+    expect(Play.BGet()).toEqual('Love-Forty');})
+  });
+
+  describe("Tennis", function() {
+  it('should echo "Player B Won" when Player B get point 4', function() {
+    expect(Play.BGet()).toEqual('Player B Won');})
+  });
